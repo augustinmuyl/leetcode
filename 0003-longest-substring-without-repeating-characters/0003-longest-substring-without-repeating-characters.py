@@ -6,7 +6,7 @@ class Solution:
 
         for i in range(len(s)):
             if s[i] in S:
-                l = S[s[i]] + 1
+                l = max(l, S[s[i]] + 1)
             S.update({s[i]: i})
             maxval = max(maxval, i+1 - l)
         
