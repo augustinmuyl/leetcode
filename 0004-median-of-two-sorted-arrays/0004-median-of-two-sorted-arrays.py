@@ -4,5 +4,4 @@ class Solution:
         mid = nums[len(nums)//2]
         if len(nums)%2 == 1:
             return mid
-        else:
-            return (mid + nums[len(nums)//2 - 1]) / 2
+        return (mid + nums[len(nums)//2 - 1]) / 2
