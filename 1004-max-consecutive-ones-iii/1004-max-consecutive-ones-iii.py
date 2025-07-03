@@ -8,8 +8,9 @@ class Solution:
                 c+=1
                 A.add(i)
             if c > k:
-                l=min(A)+1
-                A.remove(min(A))
+                minA = min(A)
+                l=minA+1
+                A.remove(minA)
                 c-=1
             maxnum = max(maxnum, i+1 - l)
         return maxnum
