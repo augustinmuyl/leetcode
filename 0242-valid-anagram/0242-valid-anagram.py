@@ -7,8 +7,5 @@ class Solution:
         for i in range(len(s)):
             A[s[i]] = A.get(s[i], 0) + 1
             B[t[i]] = B.get(t[i], 0) + 1
-        for i in A:
-            if A.get(i) != B.get(i):
-                return False
         
-        return True
+        return A == B
