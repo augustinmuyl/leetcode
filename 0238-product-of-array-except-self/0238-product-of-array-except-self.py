@@ -1,7 +1,7 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        P = [None] * len(nums)
-        S = [None] * len(nums)
+        P = [1] * len(nums)
+        S = [1] * len(nums)
         p, s = 1, 1
 
         for i in range(len(nums) - 1):
@@ -12,4 +12,4 @@ class Solution:
             s *= nums[i + 1]
             S[i] = s
         
-        return [P[i] * S[i] if P[i] is not None and S[i] is not None else P[i] if S[i] is None else S[i] for i in range(len(nums))]
+        return [P[i] * S[i] for i in range(len(nums))]
