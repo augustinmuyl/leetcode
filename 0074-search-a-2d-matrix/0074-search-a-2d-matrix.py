@@ -6,15 +6,13 @@ class Solution:
         while l <= r:
             m = (r + l) // 2
 
-            if matrix[r][0] <= target:
-                val = r
+            if matrix[m][0] <= target <= matrix[m][-1]:
+                val = m
                 break
-            elif matrix[l][-1] >= target:
-                val = l
-                break
+            elif matrix[m][0] > target:
+                r = m - 1
             else:
-                l += 1
-                r -= 1
+                l = m + 1
 
         l, r = 0, len(matrix[val]) - 1
 
