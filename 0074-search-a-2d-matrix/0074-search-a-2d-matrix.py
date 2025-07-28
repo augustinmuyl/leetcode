@@ -7,7 +7,7 @@ class Solution:
 
         l, r = 0, len(M) - 1
 
-        for i in M:
+        while l <= r:
             m = (r + l) // 2
 
             if M[m] == target:
