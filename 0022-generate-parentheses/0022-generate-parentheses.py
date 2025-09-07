@@ -1,17 +1,16 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         A = []
-        return(self.generateParenthesisRec("", n, 0, 0, A))
     
-    def generateParenthesisRec(self, s: str, n: int, opened: int, closed: int, A: list) -> str:
-        if opened == closed == n:
-            A.append(s)
-        
-        if opened <= n:
+        def backtrack(s: str, opened: int, closed: int) -> str:
+            if opened == closed == n:
+                A.append(s)
+            
+            if opened <= n:
+                backtrack(s + "(", opened + 1, closed)
             if closed < opened:
-                self.generateParenthesisRec(s + "(", n, opened + 1, closed, A)
-                self.generateParenthesisRec(s + ")", n, opened, closed + 1, A)
-            else:
-                self.generateParenthesisRec(s + "(", n, opened + 1, closed, A)
+                backtrack(s + ")", opened, closed + 1)
+            
+            return A
         
-        return A
+        return(backtrack("", 0, 0))
