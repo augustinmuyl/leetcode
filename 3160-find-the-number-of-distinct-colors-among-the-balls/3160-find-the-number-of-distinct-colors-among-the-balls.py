@@ -4,14 +4,16 @@ class Solution:
         colorCount = {}
         result = []
 
-        for i in queries:
-            if i[0] in ballColor:
-                colorCount[ballColor[i[0]]] -= 1
-                if colorCount[ballColor[i[0]]] == 0:
-                    colorCount.pop(ballColor[i[0]])
-            
-            ballColor[i[0]] = i[1]
-            colorCount[i[1]] = colorCount.get(i[1], 0) + 1
+        for x, y in queries:
+            oldColor = ballColor.get(x)
+            if oldColor != y:
+                if oldColor is not None:
+                    colorCount[oldColor] -= 1
+                    if colorCount[oldColor] == 0:
+                        del colorCount[oldColor]
+                
+                ballColor[x] = y
+                colorCount[y] = colorCount.get(y, 0) + 1
             
             result.append(len(colorCount))
         
