@@ -1,26 +1,21 @@
 class Solution:
     def decodeString(self, s: str) -> str:
-        def decodeStringRec(s: str, num: int) -> str:
-            stack = []
-            dq = deque([])
-            digit = deque([])
-            res = ""
+        stack = []
+        digit = deque([])
 
-            for i, v in enumerate(s):
-                if v == "]":
-                    while not stack[-1].isdigit():
-                        if stack[-1] != "[":
-                            dq.appendleft(stack[-1])
-                        stack.pop()
-                    
-                    while stack and stack[-1].isdigit():
-                        digit.appendleft(stack.pop())
-                    stack.append(int("".join(digit)) * ("".join(dq)))
-                    dq.clear()
-                    digit.clear()
-                else:
-                    stack.append(v)
-            
-            return "".join(stack)
+        for i, v in enumerate(s):
+            if v != "]":
+                stack.append(v)
+            else:
+                substr = ""
+                digit = ""
+
+                while stack[-1] != "[":
+                    substr = stack.pop() + substr
+                stack.pop()
+                
+                while stack and stack[-1].isdigit():
+                    digit = stack.pop() + digit
+                stack.append(int(digit) * substr)
         
-        return decodeStringRec(s, 1)
+        return "".join(stack)
