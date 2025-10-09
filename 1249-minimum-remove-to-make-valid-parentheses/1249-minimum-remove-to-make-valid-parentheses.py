@@ -1,20 +1,17 @@
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
-        openStack = []
-        validString = []
+        open_parens = []
+        invalid = set()
 
         for i, v in enumerate(s):
-            if v == "(" or v == ")":
-                if v == "(":
-                    openStack.append(len(validString))
-                    validString.append(v)
-                elif openStack:
-                    openStack.pop()
-                    validString.append(v)
-            else:
-                validString.append(v)
+            if v == "(":
+                open_parens.append(i)
+            elif v == ")":
+                if open_parens:
+                    open_parens.pop()
+                else:
+                    invalid.add(i)
         
-        for i in reversed(openStack):
-            del validString[i]
+        invalid.update(open_parens)
         
-        return "".join(validString)
+        return "".join([s[i] for i in range(len(s)) if i not in invalid])
