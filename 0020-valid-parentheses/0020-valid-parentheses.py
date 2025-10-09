@@ -1,16 +1,15 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        OPEN = {'(', '{', '['}
-        CLOSED = {')': '(', '}': '{', ']': '['}
-        A = []
+        bracketMap = {")": "(", "]": "[", "}": "{"}
+        openList = {"(", "{", "["}
+        openStack = []
 
         for i in s:
-            if i in CLOSED:
-                if CLOSED[i] == A[-1]:
-                    A.pop()
-                else:
-                    return False
-            if i in OPEN:
-                A.append(i)
-        
-        return True if not A else False
+            if i in openList:
+                openStack.append(i)
+            elif openStack and bracketMap[i] == openStack[-1]:
+                openStack.pop()
+            else:
+                return False
+                    
+        return False if openStack else True
