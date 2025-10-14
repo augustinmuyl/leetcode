@@ -1,6 +1,5 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-        q = deque([grid[0][0]])
         res = 0
 
         def dfs(r, c):
