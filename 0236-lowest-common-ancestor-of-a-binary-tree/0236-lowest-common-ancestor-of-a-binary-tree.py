@@ -14,18 +14,16 @@ class Solution:
 
         def dfs(root):
             nonlocal lca
-
-            if not root:
-                return [False, False]
-            if lca:
-                return [False, False]
+            if not root or lca:
+                return (False, False)
 
             left = dfs(root.left)
             right = dfs(root.right)
-            res = [left[0] or right[0] or root == p, left[1] or right[1] or root == q]
+            res = (left[0] or right[0] or root == p, left[1] or right[1] or root == q)
 
             if res[0] and res[1] and not lca:
                 lca = root
+
             return res
 
         dfs(root)
