@@ -1,7 +1,3 @@
-# sort intervals array
-# check i[1] against (i + 1)[0]
-# merge or not
-
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         intervals.sort()
