@@ -1,18 +1,16 @@
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         res = []
-        curr = newInterval
 
-        for i, v in enumerate(intervals):
-            if v[0] > curr[1]:
-                res.append(curr)
-                return res + intervals[i:]
-            if v[1] < curr[0] or not curr:
-                res.append(v)
+        for i in intervals:
+            if i[1] < newInterval[0]:
+                res.append(i)
+            elif i[0] > newInterval[1]:
+                res.append(newInterval)
+                return res
             else:
-                if v[1] >= curr[0] and v[0] <= curr[1]:
-                    curr = [min(v[0], curr[0]), max(v[1], curr[1])]
-            
-        res.append(curr)
+                newInterval = [min(i[0], newInterval[0]), max(i[1], newInterval[1])]
+        
+        res.append(newInterval)
         
         return res
