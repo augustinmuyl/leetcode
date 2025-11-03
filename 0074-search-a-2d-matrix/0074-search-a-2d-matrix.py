@@ -1,29 +1,29 @@
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        l, r = 0, len(matrix) - 1
-        val = 0
+        def findRow(matrix, target):
+            top, bottom = 0, len(matrix) - 1
+
+            while top <= bottom:
+                mid = (top + bottom) // 2
+
+                if matrix[mid][0] <= target and target <= matrix[mid][-1]:
+                    return mid
+                elif matrix[mid + 1][0] <= target:
+                    top = mid + 1
+                else:
+                    bottom = mid - 1
+        
+        row = findRow(matrix, target)
+        l, r = 0, len(matrix[row]) - 1
 
         while l <= r:
-            m = (r + l) // 2
+            mid = (l + r) // 2
 
-            if matrix[m][0] <= target <= matrix[m][-1]:
-                val = m
-                break
-            elif matrix[m][0] > target:
-                r = m - 1
-            else:
-                l = m + 1
-
-        l, r = 0, len(matrix[val]) - 1
-
-        while l <= r:
-            m = (r + l) // 2
-
-            if matrix[val][m] == target:
+            if mid == target:
                 return True
-            elif matrix[val][m] > target:
-                r = m - 1
+            elif target < mid:
+                r = mid - 1
             else:
-                l = m + 1
-
+                l = mid + 1
+        
         return False
