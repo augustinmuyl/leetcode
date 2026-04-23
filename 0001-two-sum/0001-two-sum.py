@@ -5,4 +5,5 @@ class Solution:
         for i, n in enumerate(nums):
             if target - n in seen:
                 return [i, seen[target - n]]
+
             seen[n] = i
