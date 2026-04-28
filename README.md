@@ -9,6 +9,7 @@ Centralized repo for all leetcode problems I've done.
 | ------- | ------- |
 | [0001-two-sum](https://github.com/augustinmuyl/leetcode/tree/main/0001-two-sum/) | Easy |
 | [0015-3sum](https://github.com/augustinmuyl/leetcode/tree/main/0015-3sum/) | Medium |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/augustinmuyl/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/augustinmuyl/leetcode/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0217-contains-duplicate](https://github.com/augustinmuyl/leetcode/tree/main/0217-contains-duplicate/) | Easy |
 ## Hash Table
@@ -38,4 +39,8 @@ Centralized repo for all leetcode problems I've done.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/augustinmuyl/leetcode/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/augustinmuyl/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 <!---LeetCode Topics End-->
