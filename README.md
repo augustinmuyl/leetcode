@@ -1,7 +1,3 @@
-# Leetcode
-
-Centralized repo for all leetcode problems I've done.
-
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Array
