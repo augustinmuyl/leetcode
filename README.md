@@ -11,6 +11,7 @@
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/augustinmuyl/leetcode/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0217-contains-duplicate](https://github.com/augustinmuyl/leetcode/tree/main/0217-contains-duplicate/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/augustinmuyl/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
+| [1167-minimum-cost-to-connect-sticks](https://github.com/augustinmuyl/leetcode/tree/main/1167-minimum-cost-to-connect-sticks/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -75,4 +76,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0054-spiral-matrix](https://github.com/augustinmuyl/leetcode/tree/main/0054-spiral-matrix/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1167-minimum-cost-to-connect-sticks](https://github.com/augustinmuyl/leetcode/tree/main/1167-minimum-cost-to-connect-sticks/) | Medium |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1167-minimum-cost-to-connect-sticks](https://github.com/augustinmuyl/leetcode/tree/main/1167-minimum-cost-to-connect-sticks/) | Medium |
 <!---LeetCode Topics End-->
