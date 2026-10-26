@@ -7,6 +7,7 @@
 | [0015-3sum](https://github.com/augustinmuyl/leetcode/tree/main/0015-3sum/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/augustinmuyl/leetcode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0054-spiral-matrix](https://github.com/augustinmuyl/leetcode/tree/main/0054-spiral-matrix/) | Medium |
+| [0075-sort-colors](https://github.com/augustinmuyl/leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/augustinmuyl/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/augustinmuyl/leetcode/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0169-majority-element](https://github.com/augustinmuyl/leetcode/tree/main/0169-majority-element/) | Easy |
@@ -32,6 +33,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/augustinmuyl/leetcode/tree/main/0015-3sum/) | Medium |
+| [0075-sort-colors](https://github.com/augustinmuyl/leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0169-majority-element](https://github.com/augustinmuyl/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/augustinmuyl/leetcode/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0217-contains-duplicate](https://github.com/augustinmuyl/leetcode/tree/main/0217-contains-duplicate/) | Easy |
@@ -41,6 +43,7 @@
 | ------- | ------- |
 | [0015-3sum](https://github.com/augustinmuyl/leetcode/tree/main/0015-3sum/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/augustinmuyl/leetcode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0075-sort-colors](https://github.com/augustinmuyl/leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0125-valid-palindrome](https://github.com/augustinmuyl/leetcode/tree/main/0125-valid-palindrome/) | Easy |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/augustinmuyl/leetcode/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 ## Binary Search
@@ -107,4 +110,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/augustinmuyl/leetcode/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
+## Quicksort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/augustinmuyl/leetcode/tree/main/0075-sort-colors/) | Medium |
+## Bubble Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/augustinmuyl/leetcode/tree/main/0075-sort-colors/) | Medium |
 <!---LeetCode Topics End-->
