@@ -6,6 +6,7 @@
 | [0001-two-sum](https://github.com/augustinmuyl/leetcode/tree/main/0001-two-sum/) | Easy |
 | [0015-3sum](https://github.com/augustinmuyl/leetcode/tree/main/0015-3sum/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/augustinmuyl/leetcode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0049-group-anagrams](https://github.com/augustinmuyl/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0054-spiral-matrix](https://github.com/augustinmuyl/leetcode/tree/main/0054-spiral-matrix/) | Medium |
 | [0056-merge-intervals](https://github.com/augustinmuyl/leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0075-sort-colors](https://github.com/augustinmuyl/leetcode/tree/main/0075-sort-colors/) | Medium |
@@ -21,6 +22,7 @@
 | ------- | ------- |
 | [0001-two-sum](https://github.com/augustinmuyl/leetcode/tree/main/0001-two-sum/) | Easy |
 | [0003-longest-substring-without-repeating-characters](https://github.com/augustinmuyl/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0049-group-anagrams](https://github.com/augustinmuyl/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0169-majority-element](https://github.com/augustinmuyl/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0217-contains-duplicate](https://github.com/augustinmuyl/leetcode/tree/main/0217-contains-duplicate/) | Easy |
 | [0242-valid-anagram](https://github.com/augustinmuyl/leetcode/tree/main/0242-valid-anagram/) | Easy |
@@ -28,12 +30,14 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/augustinmuyl/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0049-group-anagrams](https://github.com/augustinmuyl/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0125-valid-palindrome](https://github.com/augustinmuyl/leetcode/tree/main/0125-valid-palindrome/) | Easy |
 | [0242-valid-anagram](https://github.com/augustinmuyl/leetcode/tree/main/0242-valid-anagram/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/augustinmuyl/leetcode/tree/main/0015-3sum/) | Medium |
+| [0049-group-anagrams](https://github.com/augustinmuyl/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0056-merge-intervals](https://github.com/augustinmuyl/leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0075-sort-colors](https://github.com/augustinmuyl/leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0169-majority-element](https://github.com/augustinmuyl/leetcode/tree/main/0169-majority-element/) | Easy |
